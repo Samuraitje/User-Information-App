@@ -7,15 +7,15 @@ html
 	
 	div.search
 		h1 Search User Database
-			form(method='POST' action='/search')
-				div.searchBar
-					input(type='text' placeholder='Search' name='search')
-				div.searchButton
-					button(type='submit' value='submit') Search
-		div.searchResult
-			each user in searchResult
-				ul
-					li #{user.firstname} + ' ' + #{user.lastname} + ' ' + #{user.email}	
+		form(method='POST' action='/search')
+			div.searchBar
+				input(type='text' placeholder='Search' name='search')
+			div.searchButton
+				button(type='submit' value='submit') Search
+			div.searchResult
+				li Name Email
+				- for (i = 0; i < searchResult.length; i++)
+						li #{searchResult[i].firstname} #{searchResult[i].lastname} #{searchResult[i].email}	
 
 style
 	include stylesheet.css 

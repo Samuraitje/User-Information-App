@@ -29,7 +29,8 @@ app.get('/users', (req, res) => {
 
 app.get('/search', (req, res) => {
 	res.render('search', {
-		title: 'Search Bar'
+		title: 'Search Bar',
+		searchResult: []
 	});
 });
 
@@ -44,12 +45,11 @@ app.post('/search', (req, res) => {
 			if (user.firstname.toLowerCase() === req.body.search.toLowerCase() || user.lastname.toLowerCase() === req.body.search.toLowerCase()) {
 				searchResult.push(user);
 			}
-		})
-		console.log(searchResult.length)
-		res.render('search', {
-			title: 'Search Bar',
-			searchResult: searchResult
 		});
+		res.render('search', {
+		title: 'results',
+		searchResult: searchResult
+	});
 	});
 });
 
@@ -75,6 +75,6 @@ app.post('/adduser', (req, res) => {
 });
 
 //Initiated a local server on port 3000
-app.listen(3004, () => {
+app.listen(5000, () => {
     console.log('listening');
 });
