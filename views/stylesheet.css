@@ -4,7 +4,7 @@ body {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans';
 }
 
 /*----------------------Homepage----------------------*/
@@ -32,6 +32,7 @@ p {
 /*----------------------Navbar-----------------------*/
 nav ul {
     list-style-type: none;
+    font-family: 'Josefin Sans';
     padding: 0;
     overflow: hidden;
     background-color: #000;
@@ -40,15 +41,13 @@ nav ul {
 }
 
 nav li {
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 60px;
 }
 
 nav li a {
     float: left;
 	background-color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 10pt;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -63,40 +62,45 @@ nav li a:hover {
 
 /*---------------------User List---------------------*/
 .userList {
-    list-style-type: none;
+    margin: 0 auto;
+    width: 400px;
+    font-family: 'Josefin Sans';
 } 
 
-.listWrapper {
-    margin: 0 auto;
-    border-bottom: solid 1pt grey;
-    width: 60%;
-    height: 40px;
-}
-
-.listWrapperName h3{
-    margin: 0;
-}
-
-.listWrapperName {
-    float: left;
-    width: 45%;
+.userList h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14pt;
     height: 20px;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;
 }
 
-.listWrapperEmail h3{
-    margin: 0;
+.userListData {
+    margin-top: 20px;
+    width: 400px;
+    font-size: 10pt;
 }
 
-.listWrapperEmail {
-    float: left;
-    width: 45%;
-    height: 20px;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;
+.userListData table {
+    width: 100%;
+    font-size: 8pt;
+    border-collapse: collapse;
+}
+
+.userListData th {
+    border: 1px solid #000;
+    background-color: #000;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+    color: #fff;
+}
+
+.userListData td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+    background-color: #fff; 
 }
 
 /*-------------------Search Bar--------------------*/
@@ -104,12 +108,12 @@ nav li a:hover {
     margin: 0 auto;
     width: 400px;
     height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans';
 }
 
 .search h1 {
+    margin-top: 30px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14pt;
     height: 20px;
 }
@@ -137,20 +141,77 @@ nav li a:hover {
 }
 
 .searchResult {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 400px;
     height: 200px;
     font-size: 10pt;
 }
 
-.searchResult li {
-    list-style-type: none;
-    border-bottom: 1px grey solid;
-    margin-left: 40px; 
-    width: 300px;
-    height: 30px;
+.search table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.search th {
+    border: 1px solid #000;
+    background-color: #000;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
     font-size: 8pt;
-    vertical-align: middle;
-    line-height: 20px;
+    color: #fff;
+}
+
+.search td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+    font-size: 8pt;
+    background-color: #fff; 
+}
+
+/*-------------------Add User Page--------------------*/
+
+.addUser {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    font-family: 'Josefin Sans';
+}    
+
+.addUser h1 {
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: solid #000 1px;
+    margin-top: 30px;
+    text-align: center;
     padding: 10px;
+    font-size: 14pt;
+    height: 20px;
+}
+
+.addUserBar {
+    border: solid #000 1px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+}
+
+.addUserBar input {
+    width: 200px;
+}
+
+.addUserButton {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+}
+
+.addUserButton button {
+    width: 200px;
 }

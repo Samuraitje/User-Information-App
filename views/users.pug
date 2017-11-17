@@ -1,21 +1,20 @@
 html
 	head
 		title User App - #{title}
+		link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Josefin+Sans")
 	body
 		include nav.pug
-	ul.userList
-		div.listWrapper
-			div.listWrapperName
-				h3 Username
-			div.listWrapperEmail 													
-				h3 Email
-		for user in data
-			div.listWrapper
-				div.listWrapperName
-					li= `${user.firstname} ${user.lastname}`
-				div.listWrapperEmail
-					li= `${user.email}`
-		
-		
+	div.userList
+		h1 Userlist Database
+		div.userListData
+			table
+				tr
+					th Name
+					th Email
+			for user in data
+				table
+					tr
+						td #{user.firstname} #{user.lastname}
+						td #{user.email}		
 style
 	include stylesheet.css
