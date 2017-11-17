@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-color: #c6ebc6;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------------------Homepage----------------------*/
+#dragonWrapper{
+    position: relative;
+    vertical-align: middle; 
+    margin: 0 auto;
+    width: 600px;
+    height: 550px;
+}
+
+
+#dragon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 400px;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+ }
+
+/*----------------------Navbar-----------------------*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+}
+
+nav li a {
+    float: left;
+	background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/*---------------------User List---------------------*/
+.userList {
+    list-style-type: none;
+} 
+
+.listWrapper {
+    margin: 0 auto;
+    border-bottom: solid 1pt grey;
+    width: 60%;
+    height: 40px;
+}
+
+.listWrapperName h3{
+    margin: 0;
+}
+
+.listWrapperName {
+    float: left;
+    width: 45%;
+    height: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.listWrapperEmail h3{
+    margin: 0;
+}
+
+.listWrapperEmail {
+    float: left;
+    width: 45%;
+    height: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+/*-------------------Search Bar--------------------*/
+.search {
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+
+.search h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    height: 20px;
+}
+
+.searchBar {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px;
+}
+
+.searchBar input {
+    width: 200px;
+}
+
+.searchButton {
+    margin: 0 auto;
+    width: 200px;
+    padding: 5px;
+}
+
+.searchButton button {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.searchResult {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 300px;
+    height: 200px;
+}

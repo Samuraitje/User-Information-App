@@ -1,0 +1,21 @@
+html
+	head
+		title User App - #{title}
+	body
+		include nav.pug
+	ul.userList
+		div.listWrapper
+			div.listWrapperName
+				h3 Username
+			div.listWrapperEmail 													
+				h3 Email
+		for user in data
+			div.listWrapper
+				div.listWrapperName
+					li= `${user.firstname} ${user.lastname}`
+				div.listWrapperEmail
+					li= `${user.email}`
+		
+		
+style
+	include stylesheet.css

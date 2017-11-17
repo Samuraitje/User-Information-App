@@ -1,0 +1,21 @@
+html
+	head
+		title User App - #{title}
+	body
+		include nav.pug
+
+	
+	div.search
+		h1 Search User Database
+			form(method='POST' action='/search')
+				div.searchBar
+					input(type='text' placeholder='Search' name='search')
+				div.searchButton
+					button(type='submit' value='submit') Search
+		div.searchResult
+			each user in searchResult
+				ul
+					li #{user.firstname} + ' ' + #{user.lastname} + ' ' + #{user.email}	
+
+style
+	include stylesheet.css 
